@@ -1,0 +1,79 @@
+Feature: Smoke test of facebook application
+
+  Scenario Outline: Perform smoke test of facebook application   [90m# MyApplication.feature:2[0m
+    [36mGiven [0m[36mOpen firefox browser and start application[0m
+    [36mWhen [0m[36mI enter valid "<username>" and "<password>" credentials[0m
+    [36mAnd [0m[36mClick login button[0m
+    [36mThen [0m[36mUser should be able to login successfully[0m
+    [36mThen [0m[36mApplication should be closed[0m
+
+    Examples: 
+
+  Scenario Outline: Perform smoke test of facebook application               [90m# MyApplication.feature:11[0m
+    [32mGiven [0m[32mOpen firefox browser and start application[0m                         [90m# SmokeTest.open_firefox_browser_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1mmydevopscloud@gmail.com[0m[32m" and "[0m[32m[1mTest@123$[0m[32m" credentials[0m [90m# SmokeTest.i_enter_valid_and_credentials(String,String)[0m
+    [32mAnd [0m[32mClick login button[0m                                                   [90m# SmokeTest.click_login_button()[0m
+    [32mThen [0m[32mUser should be able to login successfully[0m                           [90m# SmokeTest.user_should_be_able_to_login_successfully()[0m
+    [32mThen [0m[32mApplication should be closed[0m                                        [90m# SmokeTest.application_should_be_closed()[0m
+
+  Scenario Outline: Perform smoke test of facebook application               [90m# MyApplication.feature:12[0m
+    [32mGiven [0m[32mOpen firefox browser and start application[0m                         [90m# SmokeTest.open_firefox_browser_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1mmydevopscloud@gmail.com[0m[32m" and "[0m[32m[1mTest@123$[0m[32m" credentials[0m [90m# SmokeTest.i_enter_valid_and_credentials(String,String)[0m
+    [32mAnd [0m[32mClick login button[0m                                                   [90m# SmokeTest.click_login_button()[0m
+    [32mThen [0m[32mUser should be able to login successfully[0m                           [90m# SmokeTest.user_should_be_able_to_login_successfully()[0m
+    [32mThen [0m[32mApplication should be closed[0m                                        [90m# SmokeTest.application_should_be_closed()[0m
+
+  Scenario Outline: Perform smoke test of facebook application with invalid credentials [90m# MyApplication.feature:14[0m
+    [36mGiven [0m[36mOpen firefox browser and start application[0m
+    [36mWhen [0m[36mI enter valid "<username>" and "<password>" credentials[0m
+    [36mAnd [0m[36mClick login button[0m
+    [36mThen [0m[36mUser should not be able to login[0m
+    [36mThen [0m[36mApplication should be closed[0m
+
+    Examples: 
+
+  Scenario Outline: Perform smoke test of facebook application with invalid credentials [90m# MyApplication.feature:23[0m
+    [32mGiven [0m[32mOpen firefox browser and start application[0m                                    [90m# SmokeTest.open_firefox_browser_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1mmydevopscloud@gmail.com[0m[32m" and "[0m[32m[1mTest@123$45[0m[32m" credentials[0m          [90m# SmokeTest.i_enter_valid_and_credentials(String,String)[0m
+    [32mAnd [0m[32mClick login button[0m                                                              [90m# SmokeTest.click_login_button()[0m
+    [32mThen [0m[32mUser should not be able to login[0m                                               [90m# SmokeTest.user_should_not_be_able_to_login()[0m
+    [32mThen [0m[32mApplication should be closed[0m                                                   [90m# SmokeTest.application_should_be_closed()[0m
+
+  Scenario Outline: Perform smoke test of facebook application with invalid credentials [90m# MyApplication.feature:24[0m
+    [32mGiven [0m[32mOpen firefox browser and start application[0m                                    [90m# SmokeTest.open_firefox_browser_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1mmydevopcloud@gmail.com[0m[32m" and "[0m[32m[1mTest@123$99[0m[32m" credentials[0m           [90m# SmokeTest.i_enter_valid_and_credentials(String,String)[0m
+    [32mAnd [0m[32mClick login button[0m                                                              [90m# SmokeTest.click_login_button()[0m
+    [32mThen [0m[32mUser should not be able to login[0m                                               [90m# SmokeTest.user_should_not_be_able_to_login()[0m
+    [32mThen [0m[32mApplication should be closed[0m                                                   [90m# SmokeTest.application_should_be_closed()[0m
+
+  Scenario Outline: Perform smoke test of facebook application with invalid credentials [90m# MyApplication.feature:25[0m
+    [32mGiven [0m[32mOpen firefox browser and start application[0m                                    [90m# SmokeTest.open_firefox_browser_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1mmydevopcloud@gmail.com[0m[32m" and "[0m[32m[1mTest@123$[0m[32m" credentials[0m             [90m# SmokeTest.i_enter_valid_and_credentials(String,String)[0m
+    [32mAnd [0m[32mClick login button[0m                                                              [90m# SmokeTest.click_login_button()[0m
+    [31mThen [0m[31mUser should not be able to login[0m                                               [90m# SmokeTest.user_should_not_be_able_to_login()[0m
+      [31morg.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id="loginform"]
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'DESKTOP-GETK66M', ip: '172.28.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.6.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14080, moz:profile: C:\Users\BirendraRawal\AppD..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 9728e2cb-77fe-4bc6-957f-2e5fc1e5946d
+      *** Element info: {Using=xpath, value=//*[@id="loginform"]}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+      	at stepDefinition.SmokeTest.user_should_not_be_able_to_login(SmokeTest.java:74)
+      	at ✽.Then User should not be able to login(MyApplication.feature:18)
+      [0m
+    [36mThen [0m[36mApplication should be closed[0m                                                   [90m# SmokeTest.application_should_be_closed()[0m

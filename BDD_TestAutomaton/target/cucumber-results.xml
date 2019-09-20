@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="163.746353">
+<testcase classname="Smoke test of facebook application" name="Perform smoke test of facebook application" time="26.374874">
+<system-out><![CDATA[Given Open firefox browser and start application............................passed
+When I enter valid "mydevopscloud@gmail.com" and "Test@123$" credentials....passed
+And Click login button......................................................passed
+Then User should be able to login successfully..............................passed
+Then Application should be closed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Smoke test of facebook application" name="Perform smoke test of facebook application 2" time="22.712779">
+<system-out><![CDATA[Given Open firefox browser and start application............................passed
+When I enter valid "mydevopscloud@gmail.com" and "Test@123$" credentials....passed
+And Click login button......................................................passed
+Then User should be able to login successfully..............................passed
+Then Application should be closed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Smoke test of facebook application" name="Perform smoke test of facebook application with invalid credentials" time="20.216775">
+<system-out><![CDATA[Given Open firefox browser and start application............................passed
+When I enter valid "mydevopscloud@gmail.com" and "Test@123$45" credentials..passed
+And Click login button......................................................passed
+Then User should not be able to login.......................................passed
+Then Application should be closed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Smoke test of facebook application" name="Perform smoke test of facebook application with invalid credentials 2" time="21.859048">
+<system-out><![CDATA[Given Open firefox browser and start application............................passed
+When I enter valid "mydevopcloud@gmail.com" and "Test@123$99" credentials...passed
+And Click login button......................................................passed
+Then User should not be able to login.......................................passed
+Then Application should be closed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Smoke test of facebook application" name="Perform smoke test of facebook application with invalid credentials 3" time="72.582877">
+<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;loginform&quot;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-GETK66M', ip: '172.28.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.6.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14080, moz:profile: C:\Users\BirendraRawal\AppD..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 9728e2cb-77fe-4bc6-957f-2e5fc1e5946d&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;loginform&quot;]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepDefinition.SmokeTest.user_should_not_be_able_to_login(SmokeTest.java:74)&#13;&#10;&#9;at ✽.Then User should not be able to login(MyApplication.feature:18)&#13;&#10;"><![CDATA[Given Open firefox browser and start application............................passed
+When I enter valid "mydevopcloud@gmail.com" and "Test@123$" credentials.....passed
+And Click login button......................................................passed
+Then User should not be able to login.......................................failed
+Then Application should be closed...........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id="loginform"]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GETK66M', ip: '172.28.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.6.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14080, moz:profile: C:\Users\BirendraRawal\AppD..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9728e2cb-77fe-4bc6-957f-2e5fc1e5946d
+*** Element info: {Using=xpath, value=//*[@id="loginform"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinition.SmokeTest.user_should_not_be_able_to_login(SmokeTest.java:74)
+	at ✽.Then User should not be able to login(MyApplication.feature:18)
+]]></failure>
+</testcase>
+</testsuite>

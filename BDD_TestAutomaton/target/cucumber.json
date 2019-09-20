@@ -1,0 +1,432 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Perform smoke test of facebook application",
+        "description": "",
+        "id": "smoke-test-of-facebook-application;perform-smoke-test-of-facebook-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13552002600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open firefox browser and start application",
+            "match": {
+              "location": "SmokeTest.open_firefox_browser_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1215014300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter valid \"mydevopscloud@gmail.com\" and \"Test@123$\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mydevopscloud@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123$",
+                  "offset": 45
+                }
+              ],
+              "location": "SmokeTest.i_enter_valid_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10127155400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click login button",
+            "match": {
+              "location": "SmokeTest.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104158600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should be able to login successfully",
+            "match": {
+              "location": "SmokeTest.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1376542700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Application should be closed",
+            "match": {
+              "location": "SmokeTest.application_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Perform smoke test of facebook application",
+        "description": "",
+        "id": "smoke-test-of-facebook-application;perform-smoke-test-of-facebook-application;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10937683600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open firefox browser and start application",
+            "match": {
+              "location": "SmokeTest.open_firefox_browser_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1193455100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter valid \"mydevopscloud@gmail.com\" and \"Test@123$\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mydevopscloud@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123$",
+                  "offset": 45
+                }
+              ],
+              "location": "SmokeTest.i_enter_valid_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9193400000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click login button",
+            "match": {
+              "location": "SmokeTest.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101701600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should be able to login successfully",
+            "match": {
+              "location": "SmokeTest.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1286538500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Application should be closed",
+            "match": {
+              "location": "SmokeTest.application_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Perform smoke test of facebook application with invalid credentials",
+        "description": "",
+        "id": "smoke-test-of-facebook-application;perform-smoke-test-of-facebook-application-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10675430300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Open firefox browser and start application",
+            "match": {
+              "location": "SmokeTest.open_firefox_browser_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1258755800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter valid \"mydevopscloud@gmail.com\" and \"Test@123$45\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mydevopscloud@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123$45",
+                  "offset": 45
+                }
+              ],
+              "location": "SmokeTest.i_enter_valid_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7032461900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click login button",
+            "match": {
+              "location": "SmokeTest.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132490500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should not be able to login",
+            "match": {
+              "location": "SmokeTest.user_should_not_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1117636800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Application should be closed",
+            "match": {
+              "location": "SmokeTest.application_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Perform smoke test of facebook application with invalid credentials",
+        "description": "",
+        "id": "smoke-test-of-facebook-application;perform-smoke-test-of-facebook-application-with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12119212200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Open firefox browser and start application",
+            "match": {
+              "location": "SmokeTest.open_firefox_browser_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1240795900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter valid \"mydevopcloud@gmail.com\" and \"Test@123$99\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mydevopcloud@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123$99",
+                  "offset": 44
+                }
+              ],
+              "location": "SmokeTest.i_enter_valid_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7245641200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click login button",
+            "match": {
+              "location": "SmokeTest.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130953700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should not be able to login",
+            "match": {
+              "location": "SmokeTest.user_should_not_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1122445200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Application should be closed",
+            "match": {
+              "location": "SmokeTest.application_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Perform smoke test of facebook application with invalid credentials",
+        "description": "",
+        "id": "smoke-test-of-facebook-application;perform-smoke-test-of-facebook-application-with-invalid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11074798400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Open firefox browser and start application",
+            "match": {
+              "location": "SmokeTest.open_firefox_browser_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1196854200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter valid \"mydevopcloud@gmail.com\" and \"Test@123$\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mydevopcloud@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123$",
+                  "offset": 44
+                }
+              ],
+              "location": "SmokeTest.i_enter_valid_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10233216200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click login button",
+            "match": {
+              "location": "SmokeTest.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50078007900,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id\u003d\"loginform\"]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-GETK66M\u0027, ip: \u0027172.28.32.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.6.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14080, moz:profile: C:\\Users\\BirendraRawal\\AppD..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}\nSession ID: 9728e2cb-77fe-4bc6-957f-2e5fc1e5946d\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"loginform\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefinition.SmokeTest.user_should_not_be_able_to_login(SmokeTest.java:74)\r\n\tat ✽.Then User should not be able to login(MyApplication.feature:18)\r\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "User should not be able to login",
+            "match": {
+              "location": "SmokeTest.user_should_not_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Application should be closed",
+            "match": {
+              "location": "SmokeTest.application_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Smoke test of facebook application",
+    "description": "",
+    "id": "smoke-test-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "MyApplication.feature"
+  }
+]

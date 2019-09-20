@@ -1,0 +1,205 @@
+[
+  {
+    "source": "^I enter valid \"([^\"]*)\" and \"([^\"]*)\" credentials$",
+    "steps": [
+      {
+        "name": "I enter valid \"mydevopscloud@gmail.com\" and \"Test@123$\" credentials",
+        "aggregatedDurations": {
+          "average": 1.2042347,
+          "median": 1.2042347
+        },
+        "durations": [
+          {
+            "duration": 1.2150143,
+            "location": "MyApplication.feature:4"
+          },
+          {
+            "duration": 1.1934551,
+            "location": "MyApplication.feature:4"
+          }
+        ]
+      },
+      {
+        "name": "I enter valid \"mydevopscloud@gmail.com\" and \"Test@123$45\" credentials",
+        "aggregatedDurations": {
+          "average": 1.2587558,
+          "median": 1.2587558
+        },
+        "durations": [
+          {
+            "duration": 1.2587558,
+            "location": "MyApplication.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "I enter valid \"mydevopcloud@gmail.com\" and \"Test@123$99\" credentials",
+        "aggregatedDurations": {
+          "average": 1.2407959,
+          "median": 1.2407959
+        },
+        "durations": [
+          {
+            "duration": 1.2407959,
+            "location": "MyApplication.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "I enter valid \"mydevopcloud@gmail.com\" and \"Test@123$\" credentials",
+        "aggregatedDurations": {
+          "average": 1.1968542,
+          "median": 1.1968542
+        },
+        "durations": [
+          {
+            "duration": 1.1968542,
+            "location": "MyApplication.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click login button$",
+    "steps": [
+      {
+        "name": "Click login button",
+        "aggregatedDurations": {
+          "average": 8.76637494,
+          "median": 9.1934
+        },
+        "durations": [
+          {
+            "duration": 10.1271554,
+            "location": "MyApplication.feature:5"
+          },
+          {
+            "duration": 9.1934,
+            "location": "MyApplication.feature:5"
+          },
+          {
+            "duration": 7.0324619,
+            "location": "MyApplication.feature:17"
+          },
+          {
+            "duration": 7.2456412,
+            "location": "MyApplication.feature:17"
+          },
+          {
+            "duration": 10.2332162,
+            "location": "MyApplication.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User should be able to login successfully$",
+    "steps": [
+      {
+        "name": "User should be able to login successfully",
+        "aggregatedDurations": {
+          "average": 0.1029301,
+          "median": 0.1029301
+        },
+        "durations": [
+          {
+            "duration": 0.1041586,
+            "location": "MyApplication.feature:6"
+          },
+          {
+            "duration": 0.1017016,
+            "location": "MyApplication.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Application should be closed$",
+    "steps": [
+      {
+        "name": "Application should be closed",
+        "aggregatedDurations": {
+          "average": 1.2257908,
+          "median": 1.20449185
+        },
+        "durations": [
+          {
+            "duration": 1.3765427,
+            "location": "MyApplication.feature:7"
+          },
+          {
+            "duration": 1.2865385,
+            "location": "MyApplication.feature:7"
+          },
+          {
+            "duration": 1.1176368,
+            "location": "MyApplication.feature:19"
+          },
+          {
+            "duration": 1.1224452,
+            "location": "MyApplication.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Open firefox browser and start application$",
+    "steps": [
+      {
+        "name": "Open firefox browser and start application",
+        "aggregatedDurations": {
+          "average": 11.67182542,
+          "median": 11.0747984
+        },
+        "durations": [
+          {
+            "duration": 13.5520026,
+            "location": "MyApplication.feature:3"
+          },
+          {
+            "duration": 10.9376836,
+            "location": "MyApplication.feature:3"
+          },
+          {
+            "duration": 10.6754303,
+            "location": "MyApplication.feature:15"
+          },
+          {
+            "duration": 12.1192122,
+            "location": "MyApplication.feature:15"
+          },
+          {
+            "duration": 11.0747984,
+            "location": "MyApplication.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User should not be able to login$",
+    "steps": [
+      {
+        "name": "User should not be able to login",
+        "aggregatedDurations": {
+          "average": 0.1317221,
+          "median": 0.1317221
+        },
+        "durations": [
+          {
+            "duration": 0.1324905,
+            "location": "MyApplication.feature:18"
+          },
+          {
+            "duration": 0.1309537,
+            "location": "MyApplication.feature:18"
+          }
+        ]
+      }
+    ]
+  }
+]
